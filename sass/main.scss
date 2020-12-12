@@ -1,0 +1,134 @@
+@import "mixins.scss";
+
+$gray-color: #888888;
+$dark-gray: #121212;
+$dark-gray-md: #6b6b6b;
+
+$bg-gray: #eeeeee;
+
+$font-regular: 500;
+$font-bold: 600;
+$font-bold-xl: 700;
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 0 3rem;
+    padding: 0 1rem;
+    height: 4rem;
+    font-weight: $font-bold;
+    @include breakpoint-down('sm'){
+        margin: 0 1rem;
+        padding: 0;
+        ul{ display: none;}
+    }
+    .logo{
+        display: inline-block;
+        text-decoration: underline;
+        color: $dark-gray !important;
+    }
+    ul{
+        margin: 0; 
+        padding-left: 5rem;
+        // font-weight: $font-bold;
+        li{
+            margin-right: 1rem;
+            float: left;
+            list-style: none;
+            a{
+                text-decoration: none !important;
+                color: $gray-color !important;
+            }
+        }
+    }
+    .utils {
+        margin-left: auto;
+        img{ height: 1.5rem; margin-left: 1rem; cursor: pointer;}
+    }
+    
+}
+
+.profile-overview{
+    margin-top: 2rem;
+    display: inline-block;
+    #profile-img{
+        float: left;
+        height: 100px;
+        background-size: cover;
+        border-radius: 50%;
+    }
+    .profile-content{
+        display: inline-block;
+        margin-left: 1rem;
+        p{
+            margin-bottom: .2rem;
+            color: $gray-color;
+        }
+        #profile-name{
+            font-size: 1.5rem;
+            font-weight: $font-bold-xl;
+            color: $dark-gray;
+        }
+        #more{
+            height: 1rem;
+            margin-left: 1rem;
+            vertical-align: baseline;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+.profile-items{
+    margin-top: 2rem;
+    .item{
+        color: $gray-color;
+        display: inline-block;
+        margin-right: 1rem;
+        font-weight: $font-bold;
+        cursor: pointer;
+        .item-count{
+            display: inline-block;
+            width: 3rem;
+            padding: .2rem 0;
+            text-align: center;
+            font-size: 0.8rem;
+            font-size: $font-regular;
+            background-color: $bg-gray;
+            border-radius: 50px;
+        }
+    }
+    .item.active{
+        color: $dark-gray;
+        .item-count{
+            color: $dark-gray-md;
+        }
+    }
+}
+
+.profile-gallery {
+    line-height: 0;
+    column-count: 3;
+    column-gap: 1rem;
+    @include breakpoint-down('sm'){
+        column-count: 2;
+        column-gap: 0.8rem;
+    }
+    img {
+        float: left;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        border-radius: 2rem;
+        cursor: pointer;
+    }
+}
+
+.icon-sm{
+    height: .8rem;
+    margin-right: .4rem;
+}
+
+.icon-md{
+    height: 1rem;
+}

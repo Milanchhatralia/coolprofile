@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Profile</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="/">XO</a>
+        <ul>
+            <li><a href="/">Explore</a></li>
+            <li><a href="/">Collections</a></li>
+            <li><a href="/">License</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Help</a></li>
+        </ul>
+        <div class="utils">
+            <img src="/assets/img/search-black-36dp.svg" alt="">
+            <img src="/assets/img/person_outline-black-36dp.svg" alt="">
+        </div>
+    </nav>
+
+    <div class="container mt-5 text-center">
+        <h1 class="mb-5">Hello! Some amazing stuff is waiting for you :)</h1>
+        <p>Please login to continue</p>
+        <button class="btn" onclick="googleLogin();">Google login</button>
+    </div>
+    
+    
+    <script src="/js/main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" onload="googleInit();" async defer></script>
+</body>
+</html>

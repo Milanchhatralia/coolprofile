@@ -1,0 +1,14 @@
+$grid-breakpoints: (
+  "xs": 0,
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+@mixin breakpoint-down($breakpoint) {
+	$width: map-get($grid-breakpoints, $breakpoint);
+	@media only screen and (max-width: $width) {
+		@content;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Profile</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+</head>
+<body style="display: none;">
+    <nav>
+        <a class="logo" href="/">XO</a>
+        <ul>
+            <li><a href="/">Explore</a></li>
+            <li><a href="/">Collections</a></li>
+            <li><a href="/">License</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Blog</a></li>
+            <li><a href="/">Help</a></li>
+        </ul>
+        <div class="utils">
+            <img src="/assets/img/search-black-36dp.svg" alt="">
+            <img src="/assets/img/exit_to_app-black-36dp.svg" alt="" onclick="logout()">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="profile-overview">
+            <img id="profile-img" src="https://graph.facebook.com/3394641137297279/picture?width=150&height=150" alt="">
+            <div class="profile-content">
+                <p><span id="profile-name">Milan Chhatralia</span> <img id="more" src="/assets/img/ellipsis.svg" alt="" srcset=""> </p>
+                <p><img class="icon-sm" src="/assets/img/pin.svg" alt=""><span id="profile-location">Anand</span></p>
+                <p class="profile-info">Art, Dance, Code</p>
+            </div>
+        </div>
+        
+        
+        <div class="profile-items">
+            <p class="item active">Photos <span class="item-count">24</span></p>
+            <p class="item">Followers <span class="item-count">426</span></p>
+            <p class="item">Followings <span class="item-count">132</span></p>
+            <p class="item">More <span><img src="" alt=""></span></p>
+        </div>
+
+
+        <div class="profile-gallery">
+            <img src="https://i.pinimg.com/736x/22/81/c3/2281c397cfc2836a6ad30e48b45d93df.jpg" alt="" srcset="">
+            <img src="https://i.ytimg.com/vi/mQFdJLsNbKM/maxresdefault.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/fc/c4/a7/fcc4a7b5c84d07eaa9b5cd83170746bd.jpg" alt="">
+            <img src="https://image.winudf.com/v2/image1/Y29tLm5vdnRpZWFwcHMuY3JlYXRpdmVhcnRkcmF3aW5naWRlYXNfc2NyZWVuXzFfMTU1NDMxNDYwM18wODA/screen-1.jpg?fakeurl=1&type=.jpg" alt="">
+            <img src="https://i.pinimg.com/originals/fb/49/a2/fb49a277041fa454ca4fdc279c3e826b.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0A1BFawiBpPTOiLbaxi-iNUu4vfft9sSqw&usqp=CAU" alt="">
+            <img src="https://i.pinimg.com/originals/30/2b/f8/302bf8c7124220acc03e17fbaaf3c47b.jpg" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTl1zxGdEGiwlibEUIOOHj3oEbqoagCLJIg&usqp=CAU" alt="">
+            <img src="https://i.pinimg.com/originals/a1/c1/54/a1c1540f42d60bf6e6a457f4c80b0c33.jpg" alt="">
+        </div>
+        
+    </div>
+    
+    <script src="/js/main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" onload="googleInit();" async defer></script>
+</body>
+</html>
