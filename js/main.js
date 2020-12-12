@@ -52,17 +52,17 @@ function googleLogin(){
         createCookie("userName",userName,30);
         createCookie("userPhoto", userPhoto, 30);
 
-        window.location.href = "/profile.html";        
+        window.location.href = "/coolprofile/profile.html";        
 	});
 }
 
-const isprofilePage = () => window.location.pathname === "/profile.html";
+const isprofilePage = () => window.location.pathname.replace("/coolprofile","") === "/profile.html";
 
 const logout = () => {
     createCookie("logged_in");
     createCookie("userName");
     createCookie("userPhoto");
-    window.location.href = "/index.html";
+    window.location.href = "/coolprofile/index.html";
 }
 
 window.onload = () => {
@@ -77,11 +77,11 @@ window.onload = () => {
 
             document.body.style.display = "block";
         }else{
-            window.location.href = "/profile.html";
+            window.location.href = "/coolprofile/profile.html";
         }
     }else{
         if(isprofilePage()){
-            window.location.href = "/index.html";
+            window.location.href = "/coolprofile/index.html";
         }
     }
 };
